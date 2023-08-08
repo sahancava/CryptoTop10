@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA2ADA1E2A82D66600AC810E /* CryptoTop10App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADA1D2A82D66600AC810E /* CryptoTop10App.swift */; };
+		DA2ADA202A82D66600AC810E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADA1F2A82D66600AC810E /* ContentView.swift */; };
+		DA2ADA222A82D66900AC810E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2ADA212A82D66900AC810E /* Assets.xcassets */; };
+		DA2ADA252A82D66900AC810E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2ADA242A82D66900AC810E /* Preview Assets.xcassets */; };
+		DA2ADA2F2A82D66900AC810E /* CryptoTop10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADA2E2A82D66900AC810E /* CryptoTop10Tests.swift */; };
+		DA2ADA392A82D66900AC810E /* CryptoTop10UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADA382A82D66900AC810E /* CryptoTop10UITests.swift */; };
+		DA2ADA3B2A82D66900AC810E /* CryptoTop10UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADA3A2A82D66900AC810E /* CryptoTop10UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA2ADA2B2A82D66900AC810E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2ADA122A82D66500AC810E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA2ADA192A82D66500AC810E;
+			remoteInfo = CryptoTop10;
+		};
+		DA2ADA352A82D66900AC810E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2ADA122A82D66500AC810E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA2ADA192A82D66500AC810E;
+			remoteInfo = CryptoTop10;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA2ADA1A2A82D66600AC810E /* CryptoTop10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTop10.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2ADA1D2A82D66600AC810E /* CryptoTop10App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTop10App.swift; sourceTree = "<group>"; };
+		DA2ADA1F2A82D66600AC810E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA2ADA212A82D66900AC810E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA2ADA242A82D66900AC810E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA2ADA2A2A82D66900AC810E /* CryptoTop10Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoTop10Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2ADA2E2A82D66900AC810E /* CryptoTop10Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTop10Tests.swift; sourceTree = "<group>"; };
+		DA2ADA342A82D66900AC810E /* CryptoTop10UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoTop10UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2ADA382A82D66900AC810E /* CryptoTop10UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTop10UITests.swift; sourceTree = "<group>"; };
+		DA2ADA3A2A82D66900AC810E /* CryptoTop10UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTop10UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA2ADA172A82D66500AC810E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2ADA272A82D66900AC810E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2ADA312A82D66900AC810E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA2ADA112A82D66500AC810E = {
+			isa = PBXGroup;
+			children = (
+				DA2ADA1C2A82D66600AC810E /* CryptoTop10 */,
+				DA2ADA2D2A82D66900AC810E /* CryptoTop10Tests */,
+				DA2ADA372A82D66900AC810E /* CryptoTop10UITests */,
+				DA2ADA1B2A82D66600AC810E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA2ADA1B2A82D66600AC810E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA2ADA1A2A82D66600AC810E /* CryptoTop10.app */,
+				DA2ADA2A2A82D66900AC810E /* CryptoTop10Tests.xctest */,
+				DA2ADA342A82D66900AC810E /* CryptoTop10UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA2ADA1C2A82D66600AC810E /* CryptoTop10 */ = {
+			isa = PBXGroup;
+			children = (
+				DA2ADA1D2A82D66600AC810E /* CryptoTop10App.swift */,
+				DA2ADA1F2A82D66600AC810E /* ContentView.swift */,
+				DA2ADA212A82D66900AC810E /* Assets.xcassets */,
+				DA2ADA232A82D66900AC810E /* Preview Content */,
+			);
+			path = CryptoTop10;
+			sourceTree = "<group>";
+		};
+		DA2ADA232A82D66900AC810E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DA2ADA242A82D66900AC810E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA2ADA2D2A82D66900AC810E /* CryptoTop10Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DA2ADA2E2A82D66900AC810E /* CryptoTop10Tests.swift */,
+			);
+			path = CryptoTop10Tests;
+			sourceTree = "<group>";
+		};
+		DA2ADA372A82D66900AC810E /* CryptoTop10UITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA2ADA382A82D66900AC810E /* CryptoTop10UITests.swift */,
+				DA2ADA3A2A82D66900AC810E /* CryptoTop10UITestsLaunchTests.swift */,
+			);
+			path = CryptoTop10UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA2ADA192A82D66500AC810E /* CryptoTop10 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2ADA3E2A82D66900AC810E /* Build configuration list for PBXNativeTarget "CryptoTop10" */;
+			buildPhases = (
+				DA2ADA162A82D66500AC810E /* Sources */,
+				DA2ADA172A82D66500AC810E /* Frameworks */,
+				DA2ADA182A82D66500AC810E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoTop10;
+			productName = CryptoTop10;
+			productReference = DA2ADA1A2A82D66600AC810E /* CryptoTop10.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA2ADA292A82D66900AC810E /* CryptoTop10Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2ADA412A82D66900AC810E /* Build configuration list for PBXNativeTarget "CryptoTop10Tests" */;
+			buildPhases = (
+				DA2ADA262A82D66900AC810E /* Sources */,
+				DA2ADA272A82D66900AC810E /* Frameworks */,
+				DA2ADA282A82D66900AC810E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA2ADA2C2A82D66900AC810E /* PBXTargetDependency */,
+			);
+			name = CryptoTop10Tests;
+			productName = CryptoTop10Tests;
+			productReference = DA2ADA2A2A82D66900AC810E /* CryptoTop10Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA2ADA332A82D66900AC810E /* CryptoTop10UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2ADA442A82D66900AC810E /* Build configuration list for PBXNativeTarget "CryptoTop10UITests" */;
+			buildPhases = (
+				DA2ADA302A82D66900AC810E /* Sources */,
+				DA2ADA312A82D66900AC810E /* Frameworks */,
+				DA2ADA322A82D66900AC810E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA2ADA362A82D66900AC810E /* PBXTargetDependency */,
+			);
+			name = CryptoTop10UITests;
+			productName = CryptoTop10UITests;
+			productReference = DA2ADA342A82D66900AC810E /* CryptoTop10UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA2ADA122A82D66500AC810E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DA2ADA192A82D66500AC810E = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					DA2ADA292A82D66900AC810E = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = DA2ADA192A82D66500AC810E;
+					};
+					DA2ADA332A82D66900AC810E = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = DA2ADA192A82D66500AC810E;
+					};
+				};
+			};
+			buildConfigurationList = DA2ADA152A82D66500AC810E /* Build configuration list for PBXProject "CryptoTop10" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA2ADA112A82D66500AC810E;
+			productRefGroup = DA2ADA1B2A82D66600AC810E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA2ADA192A82D66500AC810E /* CryptoTop10 */,
+				DA2ADA292A82D66900AC810E /* CryptoTop10Tests */,
+				DA2ADA332A82D66900AC810E /* CryptoTop10UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA2ADA182A82D66500AC810E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2ADA252A82D66900AC810E /* Preview Assets.xcassets in Resources */,
+				DA2ADA222A82D66900AC810E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2ADA282A82D66900AC810E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2ADA322A82D66900AC810E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA2ADA162A82D66500AC810E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2ADA202A82D66600AC810E /* ContentView.swift in Sources */,
+				DA2ADA1E2A82D66600AC810E /* CryptoTop10App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2ADA262A82D66900AC810E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2ADA2F2A82D66900AC810E /* CryptoTop10Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2ADA302A82D66900AC810E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2ADA3B2A82D66900AC810E /* CryptoTop10UITestsLaunchTests.swift in Sources */,
+				DA2ADA392A82D66900AC810E /* CryptoTop10UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA2ADA2C2A82D66900AC810E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA2ADA192A82D66500AC810E /* CryptoTop10 */;
+			targetProxy = DA2ADA2B2A82D66900AC810E /* PBXContainerItemProxy */;
+		};
+		DA2ADA362A82D66900AC810E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA2ADA192A82D66500AC810E /* CryptoTop10 */;
+			targetProxy = DA2ADA352A82D66900AC810E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DA2ADA3C2A82D66900AC810E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA2ADA3D2A82D66900AC810E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA2ADA3F2A82D66900AC810E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoTop10/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahancava.CryptoTop10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA2ADA402A82D66900AC810E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoTop10/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahancava.CryptoTop10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA2ADA422A82D66900AC810E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahancava.CryptoTop10Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoTop10.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptoTop10";
+			};
+			name = Debug;
+		};
+		DA2ADA432A82D66900AC810E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahancava.CryptoTop10Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoTop10.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CryptoTop10";
+			};
+			name = Release;
+		};
+		DA2ADA452A82D66900AC810E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahancava.CryptoTop10UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoTop10;
+			};
+			name = Debug;
+		};
+		DA2ADA462A82D66900AC810E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahancava.CryptoTop10UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoTop10;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA2ADA152A82D66500AC810E /* Build configuration list for PBXProject "CryptoTop10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2ADA3C2A82D66900AC810E /* Debug */,
+				DA2ADA3D2A82D66900AC810E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2ADA3E2A82D66900AC810E /* Build configuration list for PBXNativeTarget "CryptoTop10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2ADA3F2A82D66900AC810E /* Debug */,
+				DA2ADA402A82D66900AC810E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2ADA412A82D66900AC810E /* Build configuration list for PBXNativeTarget "CryptoTop10Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2ADA422A82D66900AC810E /* Debug */,
+				DA2ADA432A82D66900AC810E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2ADA442A82D66900AC810E /* Build configuration list for PBXNativeTarget "CryptoTop10UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2ADA452A82D66900AC810E /* Debug */,
+				DA2ADA462A82D66900AC810E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA2ADA122A82D66500AC810E /* Project object */;
+}
