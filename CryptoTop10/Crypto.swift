@@ -11,15 +11,12 @@ struct Crypto: Identifiable, Decodable {
     let id: String
     let name: String
     let market_cap: Double
-    var isFavorite: Bool = false
 }
 
-class CryptoViewModel: Identifiable, ObservableObject {
+class CryptoViewModel: ObservableObject {
     @Published var crypto: Crypto
-    @Published var isFavorite: Bool
     
     init(crypto: Crypto) {
         self.crypto = crypto
-        self.isFavorite = crypto.isFavorite
     }
 }
