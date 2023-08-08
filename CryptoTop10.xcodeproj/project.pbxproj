@@ -14,6 +14,7 @@
 		DA2ADA2F2A82D66900AC810E /* CryptoTop10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADA2E2A82D66900AC810E /* CryptoTop10Tests.swift */; };
 		DA2ADA392A82D66900AC810E /* CryptoTop10UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADA382A82D66900AC810E /* CryptoTop10UITests.swift */; };
 		DA2ADA3B2A82D66900AC810E /* CryptoTop10UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADA3A2A82D66900AC810E /* CryptoTop10UITestsLaunchTests.swift */; };
+		DA2ADA482A82D6B500AC810E /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADA472A82D6B500AC810E /* Crypto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		DA2ADA342A82D66900AC810E /* CryptoTop10UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoTop10UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2ADA382A82D66900AC810E /* CryptoTop10UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTop10UITests.swift; sourceTree = "<group>"; };
 		DA2ADA3A2A82D66900AC810E /* CryptoTop10UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTop10UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DA2ADA472A82D6B500AC810E /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				DA2ADA1F2A82D66600AC810E /* ContentView.swift */,
 				DA2ADA212A82D66900AC810E /* Assets.xcassets */,
 				DA2ADA232A82D66900AC810E /* Preview Content */,
+				DA2ADA472A82D6B500AC810E /* Crypto.swift */,
 			);
 			path = CryptoTop10;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2ADA482A82D6B500AC810E /* Crypto.swift in Sources */,
 				DA2ADA202A82D66600AC810E /* ContentView.swift in Sources */,
 				DA2ADA1E2A82D66600AC810E /* CryptoTop10App.swift in Sources */,
 			);
