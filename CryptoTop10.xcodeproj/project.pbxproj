@@ -15,8 +15,8 @@
 		DA2ADA392A82D66900AC810E /* CryptoTop10UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADA382A82D66900AC810E /* CryptoTop10UITests.swift */; };
 		DA2ADA3B2A82D66900AC810E /* CryptoTop10UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADA3A2A82D66900AC810E /* CryptoTop10UITestsLaunchTests.swift */; };
 		DA2ADA482A82D6B500AC810E /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADA472A82D6B500AC810E /* Crypto.swift */; };
-		DA53F4F22A830E8D00AA7B72 /* Config.json in Resources */ = {isa = PBXBuildFile; fileRef = DA53F4F12A830E8D00AA7B72 /* Config.json */; };
 		DA53F4F42A830FF100AA7B72 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA53F4F32A830FF100AA7B72 /* README.md */; };
+		DA53F4F62A8310DE00AA7B72 /* Config.json in Resources */ = {isa = PBXBuildFile; fileRef = DA53F4F52A8310DE00AA7B72 /* Config.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		DA2ADA3A2A82D66900AC810E /* CryptoTop10UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTop10UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DA2ADA472A82D6B500AC810E /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		DA53F4ED2A8302FD00AA7B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		DA53F4F12A830E8D00AA7B72 /* Config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Config.json; path = ../Config.json; sourceTree = "<group>"; };
 		DA53F4F32A830FF100AA7B72 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DA53F4F52A8310DE00AA7B72 /* Config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Config.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +102,13 @@
 		DA2ADA1C2A82D66600AC810E /* CryptoTop10 */ = {
 			isa = PBXGroup;
 			children = (
-				DA53F4F12A830E8D00AA7B72 /* Config.json */,
 				DA53F4ED2A8302FD00AA7B72 /* Info.plist */,
 				DA2ADA1D2A82D66600AC810E /* CryptoTop10App.swift */,
 				DA2ADA1F2A82D66600AC810E /* ContentView.swift */,
 				DA2ADA212A82D66900AC810E /* Assets.xcassets */,
 				DA2ADA232A82D66900AC810E /* Preview Content */,
 				DA2ADA472A82D6B500AC810E /* Crypto.swift */,
+				DA53F4F52A8310DE00AA7B72 /* Config.json */,
 			);
 			path = CryptoTop10;
 			sourceTree = "<group>";
@@ -243,7 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2ADA252A82D66900AC810E /* Preview Assets.xcassets in Resources */,
-				DA53F4F22A830E8D00AA7B72 /* Config.json in Resources */,
+				DA53F4F62A8310DE00AA7B72 /* Config.json in Resources */,
 				DA53F4F42A830FF100AA7B72 /* README.md in Resources */,
 				DA2ADA222A82D66900AC810E /* Assets.xcassets in Resources */,
 			);
