@@ -1,15 +1,29 @@
-//
-//  ContentView.swift
-//  CryptoTop10
-//
-//  Created by sahanc on 8.08.2023.
-//
-
 import SwiftUI
+
+struct Config: Decodable {
+    let apiUrl: String
+}
+
+class AppConfig {
+    static var shared: AppConfig = {
+        let configURL = Bundle.main.url(forResource: "Config", withExtension: "json")!
+        let data = try! Data(contentsOf: configURL)
+        let decoder = JSONDecoder()
+        let config = try! decoder.decode(Config.self, from: data)
+        return AppConfig(apiUrl: config.apiUrl)
+    }()
+    
+    let apiUrl: String
+    
+    private init(apiUrl: String) {
+        self.apiUrl = apiUrl
+    }
+}
 
 struct ContentView: View {
     @State private var cryptoViewModels: [CryptoViewModel] = []
     @State private var showError: Bool = false
+    @State private var isLoading: Bool = false
 
     var body: some View {
         if showError {
@@ -19,10 +33,11 @@ struct ContentView: View {
                 .foregroundColor(.red)
                 .padding()
         } else {
-            List {
-                // SUBSCRIBE Section
-                Section(header:
-                    HStack {
+            ZStack {
+                List {
+                    // SUBSCRIBE Section
+                    Section(header:
+                                HStack {
                         Spacer()
                         Text("SUBSCRIBE")
                             .bold()
@@ -30,37 +45,59 @@ struct ContentView: View {
                             .foregroundColor(.red)
                         Spacer()
                     }
-                    .cornerRadius(8)
-                    .padding(.horizontal)
-                    .padding(.top, 10) // Adds a top margin
-                    .onTapGesture {
-                    // Implement the subscription action here.
-                        print("Subscribe tapped!")
-                    }
-                ) {
-                    EmptyView() // This ensures the section only contains the header
-                }
-                
-                // Cryptocurrencies Section
-                Section {
-                    ForEach(cryptoViewModels, id: \.crypto.id) { cryptoViewModel in
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text(cryptoViewModel.crypto.name)
-                                Text("\(cryptoViewModel.crypto.market_cap)")
-                            }
-                            Spacer()
+                        .cornerRadius(8)
+                        .padding(.horizontal)
+                        .padding(.top, 10) // Adds a top margin
+                        .onTapGesture {
+                            // Implement the subscription action here.
+                            print("Subscribe tapped!")
                         }
-                        .background(Color.white)
+                    ) {
+                        EmptyView() // This ensures the section only contains the header
                     }
+                    
+                    // Cryptocurrencies Section
+                    Section {
+                        ForEach(cryptoViewModels, id: \.crypto.id) { cryptoViewModel in
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text(cryptoViewModel.crypto.name)
+                                    Text("\(cryptoViewModel.crypto.market_cap)")
+                                }
+                                Spacer()
+                            }
+                            .background(Color.white)
+                        }
+                    }
+                }
+                .onAppear(perform: loadData)
+                if isLoading {
+                    Color.white.opacity(0.5) // Semi-transparent background
+                        .edgesIgnoringSafeArea(.all)
+                        .disabled(true) // Disable interaction
+                    customProgressView
                 }
             }
-            .onAppear(perform: loadData)
+            .onReceive(timer) { _ in
+                // Set isLoading to true and load data
+                if !isLoading {
+                    isLoading = true
+                    loadData()
+                }
+            }
         }
     }
+    
+    let timer = Timer.publish(every: 60, on: .main, in: .common).autoconnect()
 
+    var customProgressView: some View {
+        ProgressView()
+            .scaleEffect(3.0) // Make the spinner three times its size
+    }
+    
     func loadData() {
-        let apiUrl = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_volume_desc&limit=15&lang=en&sparkline=false&price_change_percentage=false&market_data=true&market_cap_change_percentage_24h=false&volume_change_24h=false&market_cap_change_24h=false&price_change_percentage_24h_in_currency=false&market_cap_change_percentage_24h_in_currency=false&sparkline_in_7d=false&price_change_percentage_7d_in_currency=false&exchange_ids=false&exchange_volume_24h=false&market_cap_change_24h_in_currency=false&price_change_percentage_1h_in_currency=false&price_change_percentage_7d_in_currency=false&price_change_percentage_30d_in_currency=false&price_change_percentage_14d_in_currency=false&market_cap_change_percentage_7d_in_currency=false&market_cap_change_percentage_14d_in_currency=false&market_cap_change_percentage_30d_in_currency=false&exchange_volume_24h_in_currency=false&market_cap_change_1h_in_currency=false&market_cap_change_7d_in_currency=false&market_cap_change_14d_in_currency=false&market_cap_change_30d_in_currency=false&percent_change_1h_in_currency=false&percent_change_24h_in_currency=false&percent_change_7d_in_currency=false&percent_change_14d_in_currency=false&percent_change_30d_in_currency=false&percent_change_60d_in_currency=false&percent_change_90d_in_currency=false&percent_change_180d_in_currency=false&percent_change_365d_in_currency=false&order=market_cap_desc&order=market_volume_desc&order=market_cap_change_pct_24h_desc&order=market_dominance_desc&order=percent_change_24h_desc"
+        isLoading = true
+        let apiUrl = AppConfig.shared.apiUrl
 
         
         guard let url = URL(string: apiUrl) else { return }
@@ -93,6 +130,9 @@ struct ContentView: View {
                         self.showError = true
                     }
                 }
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                isLoading = false
             }
         }.resume()
     }
