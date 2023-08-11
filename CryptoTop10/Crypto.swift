@@ -11,6 +11,7 @@ struct Crypto: Identifiable, Decodable {
     let id: String
     let name: String
     let market_cap: Double
+    let current_price: Double
 }
 
 class CryptoViewModel: ObservableObject {

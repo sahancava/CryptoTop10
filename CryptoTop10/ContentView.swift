@@ -60,9 +60,20 @@ struct ContentView: View {
                     Section {
                         ForEach(cryptoViewModels, id: \.crypto.id) { cryptoViewModel in
                             HStack {
+                                VStack {
+                                    Text(".")
+                                        .bold()
+                                        .foregroundColor(.red)
+                                        .font(.system(size: 40)) // Adjust the font size as needed
+                                        .padding(.top, 7.5)
+                                    Spacer()
+                                }
                                 VStack(alignment: .leading) {
                                     Text(cryptoViewModel.crypto.name)
-                                    Text("\(cryptoViewModel.crypto.market_cap)")
+                                        .bold()
+                                        .foregroundColor(.indigo)
+                                    Text("$\(cryptoViewModel.crypto.current_price)")
+                                        .foregroundColor(.black)
                                 }
                                 Spacer()
                             }
