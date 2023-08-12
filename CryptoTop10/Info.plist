@@ -6,5 +6,7 @@
 	<array>
 		<string>fetch</string>
 	</array>
+    <key>NSDocumentsFolderUsageDescription</key>
+    <string>We need access to select and upload PDF files.</string>
 </dict>
 </plist>

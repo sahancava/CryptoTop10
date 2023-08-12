@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import Foundation
 
 @main
 struct CryptoTop10App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+                //.environmentObject(AppConfig.shared)
+            PDFUploadContentView()
         }
     }
 }
